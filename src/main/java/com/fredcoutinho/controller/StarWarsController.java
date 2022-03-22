@@ -32,7 +32,7 @@ public class StarWarsController {
     public Object getVehicles(@RequestParam(value = "id", defaultValue = "1") String id) {
         String url = baseUrl + "vehicles/" + id + "/";
         RestTemplate restTemplate = new RestTemplate();
-        Object result = restTemplate.getForObject(url, Object.class);
-        return result;
+        Object result1 = restTemplate.getForObject(url, Object.class);
+        return result1;
     }
 }
